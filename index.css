@@ -1,0 +1,61 @@
+* {
+    font-family: 'Iceland', serif;
+
+}
+
+body {
+    margin: 0;
+    background: #0016ee;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: 100px repeat(5, 80px);
+    background-color: #7700a6;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 15px 16px 0px 5px #29132e;
+}
+
+button {
+    cursor: pointer;
+    margin: 6px;
+    font-size: 2.5em;
+    border: none;
+    border-radius: 2px;
+    background-color: #00b3fe;
+    box-shadow: 5px 5px 10px -3px #bbb8a9, -5px -5px 15px 3px #0a89f1ab;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: #defe47;
+    margin: 8px;
+    border-radius: 5px;
+    box-shadow: 11px 3px 10px -1px #e9c307, -5px -5px 15px 3px #bbee03f3;
+
+}
+
+button:active {
+    background-color: #ff124f;
+}
+
+button:focus {
+    outline: none;
+}
+
+#valor-actual {
+    font-size: 1.5em;
+}
+
+#valor-anterior {
+    font-size: 2em;
+}
